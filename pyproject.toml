@@ -32,4 +32,4 @@ Issues = "https://github.com/kato-seigou/Detection5Invasive/issues"
 include-package-data = true
 
 [tool.setuptools.package.find]
-include = ["Detection5Invasive*"]
+include = ["src/Detection5Invasive*"]

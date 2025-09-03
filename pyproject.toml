@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Detection5Invasive" # 配布名
+version = "0.1.0"
+description = "YOLOv8-based pipeline for detecting 5 invasive plant species"
+authors = [
+    { name ="kato-seigou", email="seigou444@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8,<3.9"
+
+
+# 依存関係
+dependencies = [
+    "pandas",
+    "Pillow",
+    "numpy",
+    "opencv-python",
+    "ultralytics-centerloss @ git+https://github.com/kato-seigou/ultralytics_CenterLoss.git@main"
+]
+
+[project.urls]
+Homepage = "https://github.com/kato-seigou/Detection5Invasive"
+Repository = "https://github.com/kato-seigou/Detection5Invasive"
+Issues = "https://github.com/kato-seigou/Detection5Invasive/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package.find]
+include = ["Detection5Invasive*"]

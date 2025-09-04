@@ -1,9 +1,9 @@
 import os 
 import pandas as pd
-from split_pictures import split_and_save_images
-from select_pictures import get_random_pics
-from count import detect_and_count
-from extract_gpx import extract_gpx
+from .split_pictures import split_and_save_images
+from .select_pictures import get_random_pics
+from .count import detect_and_count
+from .extract_gpx import extract_gpx
 from typing import List
 
 def detection_pipeline(input_folder, process_folder, number, seed, model_path, conf):
